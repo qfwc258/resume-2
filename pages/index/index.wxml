@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="resume">
+  <!-- 标题 -->
+  <view class="title">
+    <text>黄敬鑫的个人简历</text>
+  </view>
+  <!-- 个人信息 -->
+  <view class="person-info">
+    <text>个人信息</text>
+    <text>{{ name }}/男/1995</text>
+    <text>专科/深圳职业技术学院/移动通信专业</text>
+    <text>工作年限：{{workyear}}年{{workmonth}}个月</text>
+    <text>博客：www.hjx24.com</text>
+    <text>期望岗位:前端工程师</text>
+    <text>期望城市：深圳</text>
+  </view>
+  <!-- 工作经历 -->
+  <view>
+    <text>工作经历</text> 2017-至今：深圳达实智能股份有限公司/AFC维护工程师
+  </view>
+  <!-- 个人能力 -->
+  <view>
+    <text>个人能力</text>
+    <p>熟练使用 html、css、javascript</p>
+    <p>熟悉框架 less、vue</p>
+    <p>熟悉版本控制 git</p>
+    <p>略懂 sql、php、python</p>
+  </view>
+  <!-- 个人介绍 -->
+  <view>
+    <text>个人介绍</text> 互联网这把火越烧越旺，今年三月决心往互联网行业发展，从数据库开始入门 学习路线：sql ->python->html->css->js->php->vue 开始一心想做人工智能，走岔了很多路，学习了很多东西才发现事情没有想象的那么简单 互联网的内容太多，值得学习一辈子，沉淀下来的我选择了相对容易学习的前端 基本所有互联网知识全凭自学，很多东西只接触了皮毛
+  </view>
+<!-- 联系方式 -->
+<view>
+<text>联系方式</text>
+13824339381（QQ、微信同上）
+13824339381@139.com
+<text>www.github.com/huangjingxin</text>
+</view>
+
+</view>
