@@ -1,1 +1,4 @@
 /**index.wxss**/
+.about :not(:first-child){
+  color: blue
+}
