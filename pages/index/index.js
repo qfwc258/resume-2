@@ -4,10 +4,10 @@ Page({
   data: {
     workyear: new Date().getFullYear() - 2017,
     workmonth: new Date().getMonth() - 6,
-
+    blog: 'https://www.hjx24.com',
     phone: '13824339381',
     mail: '13824339381@139.com',
-    github: 'www.github.com / huangjingxin',
+    github: 'https://github.com/huangjingxin',
   },
 
   actionSheetTap() {
@@ -65,6 +65,18 @@ Page({
     })
   },
 
+  copyBlog() {
+    wx.setClipboardData({
+      data: this.data.blog,
+      success() {
+        wx.showToast({
+          title: '复制成功',
+          icon: 'success',
+          duration: 1000
+        })
+      }
+    })
+  },
 
 
 

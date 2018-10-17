@@ -2,26 +2,48 @@
 <view class="resume">
 
   <!-- 个人信息 -->
-  <view class="person-info">
-    <view>个人信息</view>
-    <view>黄敬鑫/男/1995</view>
-    <view>专科/深圳职业技术学院/移动通信专业</view>
-    <view>工作年限：{{workyear}}年{{workmonth}}个月</view>
-    <view>博客：www.hjx24.com</view>
-    <view>期望岗位:前端工程师</view>
-    <view>期望城市：深圳</view>
+  <view>
+    <view class="h2 info">个人信息</view>
+    <view>
+    <text class="iconfont icon-geren"></text>
+    <text>黄敬鑫/男/1995</text>
+    </view>
+    <view>
+    <text class="iconfont icon-xueli"></text>
+    <text>专科/深圳职业技术学院/移动通信专业</text>
+    </view>
+    <view>
+    <text class="iconfont icon-shijian"></text>
+    <text>工作年限：{{workyear}}年{{workmonth}}个月</text>
+    </view>
+    <view>
+    <text class="iconfont icon-wangzhan"></text>
+    <text>博客：</text>
+    <text id='blog' bindtap='copyBlog'>www.hjx24.com</text>
+    </view>
+    <view>
+    <text class="iconfont icon-gangweitubiao"></text>
+    <text>期望岗位:前端工程师</text>
+    </view>
+    <view>
+    <text class="iconfont icon-dizhi"></text>
+    <text>期望城市：深圳</text>
+    </view>
   </view>
 
   <!-- 工作经历 -->
   <view>
-    <view>工作经历</view>
+    <view class='h2 experience'>工作经历</view>
     <view>深圳达实智能股份有限公司（2017-至今）</view>
-    <view>AFC维护工程师</view>
+    <view>
+    <text class="iconfont icon-gangweitubiao"></text>
+    <text>AFC维护工程师</text>
+    </view>
   </view>
 
   <!-- 个人能力 -->
   <view>
-    <view>个人能力</view>
+    <view class='h2 capable'>个人能力</view>
     <view>熟练使用 html、css、javascript</view>
     <view>熟悉框架 less、vue</view>
     <view>熟悉版本控制 git</view>
@@ -30,21 +52,27 @@
 
   <!-- 个人介绍 -->
   <view>
-    <view>个人介绍</view>
+    <view class='h2 introduce'>个人介绍</view>
     <view>
       <!-- 互联网这把火越烧越旺，今年三月决心往互联网行业发展，从数据库开始入门 学习路线：sql ->python->html->css->js->php->vue 开始一心想做人工智能，走岔了很多 路，学习了很多东西才发现事情没有想象的那么简单 互联网的内容太多，值得学习一辈子，沉淀下来的我选择了相对容易学习的前端 基本所有互联网知识全凭自学，很多东西 只接触了皮毛 -->
     </view>
 
   </view>
   <!-- 联系方式 -->
-  <view class='about'>
-    <view>联系方式</view>
-    
-    <view bindtap='actionSheetTap'>13824339381（QQ、微信同上）</view>
-
-    <view bindtap="copyMail">13824339381@139.com</view>
-
-    <view bindtap='copyGithub'>@huangjingxin</view>
+  <view>
+    <view class='h2 about'>联系方式</view>
+    <view>
+      <text class="iconfont icon-shouji"></text>
+      <text id='phone' bindtap='actionSheetTap'>13824339381（QQ、微信同上）</text>
+    </view>
+    <view>
+      <text class="iconfont icon-duanxin"></text>
+      <text id='mail' bindtap="copyMail">13824339381@139.com</text>
+    </view>
+    <view>
+      <text class="iconfont icon-github"></text>
+      <text id='github' bindtap='copyGithub'>@huangjingxin</text>
+    </view>
 
   </view>
 
