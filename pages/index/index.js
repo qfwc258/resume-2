@@ -8,6 +8,20 @@ Page({
     phone: '13824339381',
     mail: '13824339381@139.com',
     github: 'https://github.com/huangjingxin',
+    gitee: 'https://gitee.com/wongjingxin',
+  },
+
+  copyBlog() {
+    wx.setClipboardData({
+      data: this.data.blog,
+      success() {
+        wx.showToast({
+          title: '复制成功',
+          icon: 'success',
+          duration: 1000
+        })
+      }
+    })
   },
 
   actionSheetTap() {
@@ -65,9 +79,9 @@ Page({
     })
   },
 
-  copyBlog() {
+  copyGitee() {
     wx.setClipboardData({
-      data: this.data.blog,
+      data: this.data.gitee,
       success() {
         wx.showToast({
           title: '复制成功',
@@ -77,7 +91,6 @@ Page({
       }
     })
   },
-
 
 
 

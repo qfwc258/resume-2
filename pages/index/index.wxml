@@ -22,7 +22,7 @@
     <text id='blog' bindtap='copyBlog'>www.hjx24.com</text>
     </view>
     <view>
-    <text class="iconfont icon-gangweitubiao"></text>
+    <text class="iconfont icon-34"></text>
     <text>期望岗位:前端工程师</text>
     </view>
     <view>
@@ -47,17 +47,20 @@
     <view>熟练使用 html、css、javascript</view>
     <view>熟悉框架 less、vue</view>
     <view>熟悉版本控制 git</view>
-    <view>略懂 sql、php、python</view>
+    <view>略懂 sql、python</view>
   </view>
 
   <!-- 个人介绍 -->
   <view>
     <view class='h2 introduce'>个人介绍</view>
     <view>
-      <!-- 互联网这把火越烧越旺，今年三月决心往互联网行业发展，从数据库开始入门 学习路线：sql ->python->html->css->js->php->vue 开始一心想做人工智能，走岔了很多 路，学习了很多东西才发现事情没有想象的那么简单 互联网的内容太多，值得学习一辈子，沉淀下来的我选择了相对容易学习的前端 基本所有互联网知识全凭自学，很多东西 只接触了皮毛 -->
+      互联网这把火越烧越旺，今年三月决心往互联网行业发展，从数据库开始入门 
+      <view>学习路线:</view>
+      <view>sql->python->html->css->js->vue</view>
+      <text>开始一心想做人工智能，走岔了很多路，学习了很多东西才发现事情没有想象的那么简单 互联网的内容太多，值得学习一辈子，沉淀下来的我选择了相对容易学习的前端 基本所有互联网知识全凭自学，很多东西 只接触了皮毛</text>
     </view>
-
   </view>
+
   <!-- 联系方式 -->
   <view>
     <view class='h2 about'>联系方式</view>
@@ -73,7 +76,10 @@
       <text class="iconfont icon-github"></text>
       <text id='github' bindtap='copyGithub'>@huangjingxin</text>
     </view>
-
+    <view>
+      <text class="iconfont icon-ma"></text>
+      <text id='github' bindtap='copyGitee'>@码云wongjingxin</text>
+    </view>
   </view>
 
 </view>
