@@ -3,17 +3,54 @@
   margin-left: 2px;
 }
 
+#person-info view :not(:first-child){
+  padding-left: 2px;
+}
+
 .h2 {
-  margin: 2px;
-  padding-left: 5px;
+  margin: 1em;
+  padding: 5px;
   border-bottom:  1px solid black;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold; 
+}
+
+#person-experience,#person-capable,#person-introduce {
+  padding-left: 10px;
+}
+
+#experience-job {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#experience-job :not(:first-child) {
+  padding-left: 2px;
+}
+
+#introduce-article {
+  padding-top: 6px;
+  margin-right: 5px;
+  text-indent : 20px;
+  line-height:1.5em；
 }
 
 #blog,#phone,#mail,#github{
   color: blue;
+  padding-left: 8px;
 }
+
+#introduce-route {
+  font-weight: bold;
+}
+
+#foot {
+  padding: 5em 0;
+  color: grey;
+  text-align: center;
+}
+
+
 
  /* 阿里 iconfont 图标 */
 @font-face {

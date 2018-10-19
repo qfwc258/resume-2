@@ -2,7 +2,7 @@
 <view class="resume">
 
   <!-- 个人信息 -->
-  <view>
+  <view id='person-info'>
     <view class="h2 info">个人信息</view>
     <view>
     <text class="iconfont icon-geren"></text>
@@ -18,12 +18,12 @@
     </view>
     <view>
     <text class="iconfont icon-wangzhan"></text>
-    <text>博客：</text>
+    <text>博客网站：</text>
     <text id='blog' bindtap='copyBlog'>www.hjx24.com</text>
     </view>
     <view>
     <text class="iconfont icon-34"></text>
-    <text>期望岗位:前端工程师</text>
+    <text>期望岗位：前端工程师</text>
     </view>
     <view>
     <text class="iconfont icon-dizhi"></text>
@@ -32,17 +32,17 @@
   </view>
 
   <!-- 工作经历 -->
-  <view>
+  <view id='person-experience'>
     <view class='h2 experience'>工作经历</view>
     <view>深圳达实智能股份有限公司（2017-至今）</view>
-    <view>
+    <view id='experience-job'>
     <text class="iconfont icon-gangweitubiao"></text>
     <text>AFC维护工程师</text>
     </view>
   </view>
 
   <!-- 个人能力 -->
-  <view>
+  <view id='person-capable'>
     <view class='h2 capable'>个人能力</view>
     <view>熟练使用 html、css、javascript</view>
     <view>熟悉框架 less、vue</view>
@@ -51,18 +51,22 @@
   </view>
 
   <!-- 个人介绍 -->
-  <view>
+  <view id='person-introduce'>
     <view class='h2 introduce'>个人介绍</view>
-    <view>
-      互联网这把火越烧越旺，今年三月决心往互联网行业发展，从数据库开始入门 
-      <view>学习路线:</view>
-      <view>sql->python->html->css->js->vue</view>
-      <text>开始一心想做人工智能，走岔了很多路，学习了很多东西才发现事情没有想象的那么简单 互联网的内容太多，值得学习一辈子，沉淀下来的我选择了相对容易学习的前端 基本所有互联网知识全凭自学，很多东西 只接触了皮毛</text>
+    <view> 
+      <view id='introduce-route'>学习路线:</view>
+      <view>sql⇨python⇨html⇨css⇨js⇨vue</view>
+      <view id='introduce-article'>
+      <view>互联网这把火越烧越旺，今年三月决心往互联网行业发展，从数据库开始入门。</view>
+      <view>开始一心想做人工智能，走岔了很多路，学习了很多东西才发现事情没有想象的那么简单。</view>
+      <view>互联网的内容太多，值得学习一辈子，沉淀下来的我选择了相对容易学习的前端。</view>
+      <view>基本所有互联网知识全凭自学，很多东西只接触了皮毛。</view>
+      </view>
     </view>
   </view>
 
   <!-- 联系方式 -->
-  <view>
+  <view id='person-about'>
     <view class='h2 about'>联系方式</view>
     <view>
       <text class="iconfont icon-shouji"></text>
@@ -78,8 +82,10 @@
     </view>
     <view>
       <text class="iconfont icon-ma"></text>
-      <text id='github' bindtap='copyGitee'>@码云wongjingxin</text>
+      <text id='github' bindtap='copyGitee'>@wongjingxin</text>
     </view>
   </view>
+
+  <view id='foot'>-----------The End-----------</view>
 
 </view>
