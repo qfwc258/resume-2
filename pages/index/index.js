@@ -2,13 +2,11 @@
 
 Page({
   data: {
-    workyear: new Date().getFullYear() - 2017,
-    workmonth: new Date().getMonth() - 6,
-    blog: 'https://www.hjx24.com',
+    blog: 'https://docs.hjx24.com',
     phone: '13824339381',
     mail: '13824339381@139.com',
     github: 'https://github.com/huangjingxin',
-    gitee: 'https://gitee.com/wongjingxin',
+    demo:"http://demo.hjx24.com"
   },
 
   copyBlog() {
@@ -16,8 +14,21 @@ Page({
       data: this.data.blog,
       success() {
         wx.showToast({
-          title: '复制成功',
-          icon: 'success',
+          title: '内容已复制',
+          icon: "none",
+          duration: 1000
+        })
+      }
+    })
+  },
+
+  copyDemo() {
+    wx.setClipboardData({
+      data: this.data.demo,
+      success() {
+        wx.showToast({
+          title: '内容已复制',
+          icon: "none",
           duration: 1000
         })
       }
@@ -42,8 +53,8 @@ Page({
             data: '13824339381',
             success() {
               wx.showToast({
-                title: '复制成功',
-                icon: 'success',
+                title: '内容已复制',
+                icon: 'none',
                 duration: 1000,
               })
             }
@@ -58,8 +69,8 @@ Page({
       data: this.data.mail,
       success() {
         wx.showToast({
-          title: '复制成功',
-          icon: 'success',
+          title: '内容已复制',
+          icon: 'none',
           duration: 1000
         })
       }
@@ -71,28 +82,12 @@ Page({
       data: this.data.github,
       success() {
         wx.showToast({
-          title: '复制成功',
-          icon: 'success',
+          title: '内容已复制',
+          icon: 'none',
           duration: 1000
         })
       }
     })
   },
-
-  copyGitee() {
-    wx.setClipboardData({
-      data: this.data.gitee,
-      success() {
-        wx.showToast({
-          title: '复制成功',
-          icon: 'success',
-          duration: 1000
-        })
-      }
-    })
-  },
-
-
-
 
 })

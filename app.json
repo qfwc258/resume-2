@@ -1,11 +1,16 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "个人简历",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "#333"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
   }
 }
